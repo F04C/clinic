@@ -162,6 +162,11 @@ header {
   cursor: pointer;
 }
 
+#searchPatient {
+  text-align: right;
+  padding: 10px;
+  font-size: 16px;
+}
 nav {
   background-color: #333; /* Change the background color as needed */
   color: #fff; /* Text color for the links */
@@ -224,6 +229,7 @@ nav a:hover {
   border: 1px solid #ccc;
   border-radius: 3px;
   resize: vertical;
+  font-size: 16px;
 }
 
 .form-group textarea {

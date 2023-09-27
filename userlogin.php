@@ -5,7 +5,7 @@
     {
 
             $usernameInput = $_POST['username'];
-            $userpassInput = $_POST['passsword'];
+            $userpassInput = $_POST['password'];
 
             $sql = "SELECT * FROM tblsec  where username = '".$usernameInput."' and password = '".$userpassInput."';";
             if($conn)
@@ -15,7 +15,6 @@
                     
                     if($executeSQL)
                     {
-                        echo "Success";
                         $numRows = mysqli_num_rows($executeSQL);
                         if($numRows == 1)
                         {

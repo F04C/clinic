@@ -13,7 +13,8 @@ if (!isset($_SESSION['username'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clinic Management System</title>
-    <link rel="stylesheet" type="text/css" href="styless.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <header>
@@ -21,9 +22,9 @@ if (!isset($_SESSION['username'])) {
             <img src="../pictures/medicallogo.png" alt="Your Clinic Logo">
         </div>
         <div class="search-bar">
-            <form action="https://avatar.fandom.com/wiki/Special:Search" method="get">
-                <input type="text" name="query" placeholder="Search...">
-                <button type="submit">Search</button>
+            <form action="patientrecord.php" method="get">
+                <input type="text" name="patientQuery" id = "searchPatient" placeholder="Search LAST NAME...">
+                <button type="submit" name = "patientsearchBtn">Search</button>
             </form>
         </div>
     </header>
@@ -35,45 +36,58 @@ if (!isset($_SESSION['username'])) {
     <br><br>
     <br><br>
 
-        <fieldset class="custom-fieldset" >
+        <fieldset class="custom-fieldset">
             <legend><h1><b>Patient Information</b></h1></legend>
+
             <div class="form-group">
                 <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" placeholder="First Name">
+                <input type="text" id="firstName" name ="fname" placeholder="First Name">
             </div>
+
             <div class="form-group">
                 <label for="middleName">Middle Name:</label>
-                <input type="text" id="middleName" placeholder="Middle Name">
+                <input type="text" id="middleName" name ="mname" placeholder="Middle Name">
             </div>
+
             <div class="form-group">
                 <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" placeholder="Last Name">
+                <input type="text" id="lastName" name ="lname" placeholder="Last Name">
             </div>
-            <div class="form-group">
-                <label for="dateOfBirth">Date of Birth:</label>
-                <input type="text" id="dateOfBirth">
-            </div>
+
             <div class="form-group">
                 <label for="age">Age:</label>
-                <input type="text" id="age">
+                <input type="text" id="age" name ="pAge">
             </div>
+
             <div class="form-group">
                 <label for="sex">Sex:</label>
-                <input type="text" id="sex">
+                <input type="radio" name="sex" id="male" value="male" checked>
+                <label for="male">Male</label>
+                <input type="radio" name="sex" id="female" value="female">
+                <label for="female">Female</label>
             </div>
-            <div class="form-group">
-                <label for="phoneNumber">Phone Number:</label>
-                <input type="text" id="phoneNumber">
-            </div>
+
             <div class="form-group">
                 <label for="address">Address:</label>
-                <input type="text" id="address">
+                <input type="text" id="address" name = "pAddress">
             </div>
+
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="text" id="phoneNumber" name ="pPhone">
+            </div>
+
+            <div class="form-group">
+                <label for="dateOfBirth">Date of Birth:</label>
+                <input type="date" id="dateOfBirth" name = "pDOB">
+            </div>
+
             <div class="form-group">
                 <label for="description">Description:</label>
-                <textarea id="description"></textarea>
+                <textarea id="description" name = "pDesc"></textarea>
             </div>
-            <button class = "patientbutton">Add Patient</button>
+
+            <button class = "patientbutton" name = "btnAddPatient"> Add Patient </button>
         </fieldset>   
 </body>
 </html>

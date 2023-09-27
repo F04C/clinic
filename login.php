@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login and Sign up</title>
-    <link rel ="stylesheet" type = "text/css" href = "styless.css">
+    <link rel ="stylesheet" type = "text/css" href = "styles.css">
     <link href = "https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel = "stylesheet">
 </head>
 <body class = "">
@@ -13,8 +13,8 @@
         <div class = "signup">
             <form action ="register.php" method = "POST">
                 <label class ="label" for = "chk" aria-hidden="true">Sign up</label>
-                <input class = "input" type = "text" name="username" placeholder = "Username" required>
-                <input class = "input" type = "Password" name="password" placeholder = "Password" required>
+                <input class = "input" type = "text" name="registerusername" placeholder = "Username" required>
+                <input class = "input" type = "Password" name="registerpassword" placeholder = "Password" required>
                 <button class = "button" >Sign up</button>
             </form>
 
