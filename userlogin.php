@@ -1,13 +1,13 @@
 <?php
-    require 'db_conn.php';   
+    require 'dbconn.php';   
 
     if(isset($_POST['btnLogin']))
     {
 
-            $usernameInput = $_POST['inputUsername'];
-            $userpassInput = $_POST['inputPassword'];
+            $usernameInput = $_POST['username'];
+            $userpassInput = $_POST['passsword'];
 
-            $sql = "SELECT * FROM tbluser  where username = '".$usernameInput."' and password = '".$userpassInput."';";
+            $sql = "SELECT * FROM tblsec  where username = '".$usernameInput."' and password = '".$userpassInput."';";
             if($conn)
             {
                 try{
@@ -15,6 +15,7 @@
                     
                     if($executeSQL)
                     {
+                        echo "Success";
                         $numRows = mysqli_num_rows($executeSQL);
                         if($numRows == 1)
                         {
@@ -22,7 +23,7 @@
 
                             session_start();
                             $_SESSION['username'] = $record['username'];
-                            $_SESSION['userid'] = $record['idtbluser'];
+                            $_SESSION['userid'] = $record['userid'];
 
                             header('Location: index.php');
                         }

@@ -11,20 +11,20 @@
     <div class ="main">
         <input type = "checkbox" id ="chk" aria-hidden = "true">
         <div class = "signup">
-            <form action = "login.html">
+            <form action ="userlogin.php" method = "POST">
                 <label class ="label" for = "chk" aria-hidden="true">Sign up</label>
-                <input class = "input" type = "text" name="txt" placeholder = "User name" required>
-                <input class = "input" type = "Password" name="pswd" placeholder = "Password" required>
+                <input class = "input" type = "text" name="username" placeholder = "Username" required>
+                <input class = "input" type = "Password" name="password" placeholder = "Password" required>
                 <button class = "button" >Sign up</button>
             </form>
 
         </div>
         <div class = "login">
-            <form action = "index.html"> 
+            <form action = "userlogin.php" method = "POST"> 
                 <label class ="label" for = "chk" aria-hidden="true">Login</label>
                 <input class = "input" type = "text" name="username" placeholder = "Username" required>
                 <input class = "input" type = "Password" name="password" placeholder = "Password" required >
-                <button class = "button">Login</button>
+                <button class = "button" name = "btnLogin">Login</button>
             </form>
         </div>
     </div>
