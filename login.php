@@ -11,7 +11,7 @@
     <div class ="main">
         <input type = "checkbox" id ="chk" aria-hidden = "true">
         <div class = "signup">
-            <form action ="userlogin.php" method = "POST">
+            <form action ="register.php" method = "POST">
                 <label class ="label" for = "chk" aria-hidden="true">Sign up</label>
                 <input class = "input" type = "text" name="username" placeholder = "Username" required>
                 <input class = "input" type = "Password" name="password" placeholder = "Password" required>
