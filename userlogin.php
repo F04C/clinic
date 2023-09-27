@@ -22,7 +22,7 @@
 
                             session_start();
                             $_SESSION['username'] = $record['username'];
-                            $_SESSION['userid'] = $record['idtblusers'];
+                            $_SESSION['userid'] = $record['idtbluser'];
 
                             header('Location: index.php');
                         }
