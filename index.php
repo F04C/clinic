@@ -1,3 +1,79 @@
 <?php
+include "dbconn.php";
 
+session_start();
+if (!isset($_SESSION['username'])) {
+    header('Location: login.php');
+}
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Management System</title>
+    <link rel="stylesheet" type="text/css" href="styless.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../pictures/medicallogo.png" alt="Your Clinic Logo">
+        </div>
+        <div class="search-bar">
+            <form action="https://avatar.fandom.com/wiki/Special:Search" method="get">
+                <input type="text" name="query" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+    <br>
+<nav>        
+      <li><a href="/patientrecord.php">Patient Records</a></li>
+</nav>
+
+    <br><br>
+    <br><br>
+
+        <fieldset class="custom-fieldset" >
+            <legend><h1><b>Patient Information</b></h1></legend>
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <label for="middleName">Middle Name:</label>
+                <input type="text" id="middleName" placeholder="Middle Name">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+                <label for="dateOfBirth">Date of Birth:</label>
+                <input type="text" id="dateOfBirth">
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="text" id="age">
+            </div>
+            <div class="form-group">
+                <label for="sex">Sex:</label>
+                <input type="text" id="sex">
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="text" id="phoneNumber">
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address">
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description"></textarea>
+            </div>
+            <button class = "patientbutton">Add Patient</button>
+        </fieldset>   
+</body>
+</html>
