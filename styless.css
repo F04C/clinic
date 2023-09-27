@@ -1,200 +1,192 @@
 /* Login.html css*/
 /* Common styles for both large and small screens */
-body{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: 'Jost', sans-serif;
-    background: url(medicalpicture);
-    background-repeat: no-repeat; /* Prevent image from repeating */
-    background-attachment: fixed; /* Fix the image on the body */
-    background-size: cover; /* Cover the entire background */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Jost", sans-serif;
+  background: url(medicalpicture);
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-attachment: fixed; /* Fix the image on the body */
+  background-size: cover; /* Cover the entire background */
 }
 
-
 .main {
-    width: 80%; /* Adjusted width for larger screens */
-    max-width: 400px; /* Limiting the maximum width for small screens */
-    height: 500px;
-    background: red;
-    background: url(medicallogo.png) no-repeat center / cover;
-    border-radius: 10px;
-    box-shadow: 5px 20px 50px #bd9090;
-    overflow: hidden;
+  width: 80%; /* Adjusted width for larger screens */
+  max-width: 400px; /* Limiting the maximum width for small screens */
+  height: 500px;
+  background: red;
+  background: url(medicallogo.png) no-repeat center / cover;
+  border-radius: 10px;
+  box-shadow: 5px 20px 50px #bd9090;
+  overflow: hidden;
 }
 
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
-    body {
-        flex-direction: column;
-        align-items: center;
-    }
+  body {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .main {
-        width: 90%; 
-        max-width: none;
-        height: auto; 
-    }
+  .main {
+    width: 90%;
+    max-width: none;
+    height: auto;
+  }
 }
 
 #chk {
-    display: none;
+  display: none;
 }
 
 .signup {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.label{
-    color : #000000;
-    font-size: 2.3em;
-    justify-content: center;
-    display: flex; 
-    margin: 60px;
-    font-weight: bold;
-    cursor: pointer;
-    transition : .5s ease-in-out;
+.label {
+  color: #000000;
+  font-size: 2.3em;
+  justify-content: center;
+  display: flex;
+  margin: 60px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
-.input{
-    width: 60%;
-    height: 20px;
-    background: #e0dede;
-    justify-content: center;
-    display: flex;
-    margin: 20px auto;
-    padding: 10px;
-    border:none;
-    outline: none;
-    border-radius: 5px;
+.input {
+  width: 60%;
+  height: 20px;
+  background: #e0dede;
+  justify-content: center;
+  display: flex;
+  margin: 20px auto;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
 }
-.button{
-    width: 60%;
-    height: 40px;
-    margin: 10px auto;
-    justify-content: center;
-    display: block;
-    color: #fff;
-    background: #573b8a;
-    font-size: 1em;
-    font-weight: bold;
-    margin-top: 20px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    transition: .2s ease-in-out;
-    cursor: pointer;
-
-}
-
-button:hover{
-    background: #6d44b6;
-    
-}
-.login{
-    height: 460px;
-    background: lightskyblue;
-    border-radius: 60% / 10%;
-    transform: translateY(-180px);
-    transition: .8s ease-in-out;
-
-}
-.login label{
-    color: #573b8a;
-    transform: scale(.6);
-
+.button {
+  width: 60%;
+  height: 40px;
+  margin: 10px auto;
+  justify-content: center;
+  display: block;
+  color: #fff;
+  background: #573b8a;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 
-#chk:checked ~ .login{
-    transform: translateY(-500px);
+button:hover {
+  background: #6d44b6;
 }
-#chk:checked ~ .login label{
-    transform: scale(1);
+.login {
+  height: 460px;
+  background: lightskyblue;
+  border-radius: 60% / 10%;
+  transform: translateY(-180px);
+  transition: 0.8s ease-in-out;
 }
-#chk:checked ~ .signup label{
-    transform: scale(.6);
+.login label {
+  color: #573b8a;
+  transform: scale(0.6);
+}
+
+#chk:checked ~ .login {
+  transform: translateY(-500px);
+}
+#chk:checked ~ .login label {
+  transform: scale(1);
+}
+#chk:checked ~ .signup label {
+  transform: scale(0.6);
 }
 /**********
 *********************************** index.html css*************************
 **********/
 
-        
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    color: #fff;
-    padding: 15px; /* Adjust padding as needed */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+  color: #fff;
+  padding: 15px; /* Adjust padding as needed */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .logo img {
-    max-height: 40px; /* Adjust the height of your logo */
+  max-height: 40px; /* Adjust the height of your logo */
 }
 
 /* Search bar styles */
 .search-bar {
-    margin-left: auto;
-    margin-right: 100px; /* Adjust the right margin as needed */
-    display: flex;
-    align-items: center;
+  margin-left: auto;
+  margin-right: 100px; /* Adjust the right margin as needed */
+  display: flex;
+  align-items: center;
 }
 .search-bar form {
-    display: flex;
-    align-items: center;
-    
+  display: flex;
+  align-items: center;
 }
 
 .search-bar input[type="text"] {
-    padding: 5px 50px; /* Increase left padding for a wider input */
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    margin-right: 50px; /* Add margin to create space between input and button */
-    width: 200px; /* Adjust the width as needed */
-
+  padding: 5px 50px; /* Increase left padding for a wider input */
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 50px; /* Add margin to create space between input and button */
+  width: 200px; /* Adjust the width as needed */
 }
 .search-bar button[type="submit"] {
-    background-color: #d43535;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 3px;
-    cursor: pointer;
+  background-color: #d43535;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 nav {
-    background-color: #333; /* Change the background color as needed */
-    color: #fff; /* Text color for the links */
-    text-align: center;
-    padding: 10px;
+  background-color: #333; /* Change the background color as needed */
+  color: #fff; /* Text color for the links */
+  text-align: center;
+  padding: 10px;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px; /* Adjust the spacing between links */
+  display: inline;
+  margin-right: 20px; /* Adjust the spacing between links */
 }
 
 nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /**********
@@ -202,42 +194,42 @@ nav a:hover {
 **********/
 
 .custom-fieldset {
-    border: 1px solid #ccc;
-    padding: 10px; /* Adjust padding as needed */
-    width: 90%;
-    max-width: 800px;
-    margin: 50px auto; /* Increase the margin to push it away from the top */
-    margin-bottom: 1px; /* Add margin at the bottom */
-    box-sizing: border-box;
-    background-image: url('your-image-url.jpg'); /* Add the image URL here */
-    background-size: cover; /* Cover the fieldset with the background image */
-    background-repeat: no-repeat; /* Prevent image from repeating */
+  border: 1px solid #ccc;
+  padding: 10px; /* Adjust padding as needed */
+  width: 90%;
+  max-width: 800px;
+  margin: 50px auto; /* Increase the margin to push it away from the top */
+  margin-bottom: 1px; /* Add margin at the bottom */
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  background-image: url("your-image-url.jpg"); /* Add the image URL here */
+  background-size: cover; /* Cover the fieldset with the background image */
+  background-repeat: no-repeat; /* Prevent image from repeating */
 }
 
-
 .form-group {
-    margin-bottom: 15px; /* Increase margin for spacing */
+  margin-bottom: 15px; /* Increase margin for spacing */
 }
 
 .form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px; /* Add some space below labels */
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px; /* Add some space below labels */
 }
 
 .form-group input[type="text"],
 .form-group textarea {
-    width: 95%; /* Adjust width to leave space on the right */
-    padding: 10px; /* Increase padding for bigger textboxes */
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    resize: vertical;
+  width: 95%; /* Adjust width to leave space on the right */
+  padding: 10px; /* Increase padding for bigger textboxes */
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  resize: vertical;
 }
 
 .form-group textarea {
-    height: 120px; /* Increase the height for bigger textarea */
+  height: 120px; /* Increase the height for bigger textarea */
 }
 .patientbutton {
-    float: right;
-    margin: 10px 20px; /* Adjust top margin as needed */
+  float: right;
+  margin: 10px 20px; /* Adjust top margin as needed */
 }
