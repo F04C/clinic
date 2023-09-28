@@ -9,7 +9,7 @@
 
             $sql = "SELECT * FROM tblsec  where username = '".$usernameInput."' and password = '".$userpassInput."';";
             if($conn)
-            {
+            {    
                 try{
                     $executeSQL = mysqli_query($conn, $sql);
                     
