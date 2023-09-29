@@ -16,6 +16,14 @@
                 <input class = "input" type = "text" name="registerusername" placeholder = "Username" required>
                 <input class = "input" type = "Password" name="registerpassword" placeholder = "Password" required>
                 <button class = "button" name = "btnSignup">Sign up</button>
+                <?php
+                if (isset($_GET["msg"])) 
+                {
+                    $msg = $_GET["msg"];
+                    echo '<p class="message">' . $msg . '</p>';
+                }
+                ?>
+
             </form>
 
         </div>
