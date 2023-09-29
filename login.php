@@ -15,7 +15,7 @@
                 <label class ="label" for = "chk" aria-hidden="true">Sign up</label>
                 <input class = "input" type = "text" name="registerusername" placeholder = "Username" required>
                 <input class = "input" type = "Password" name="registerpassword" placeholder = "Password" required>
-                <button class = "button" >Sign up</button>
+                <button class = "button" name = "btnSignup">Sign up</button>
             </form>
 
         </div>

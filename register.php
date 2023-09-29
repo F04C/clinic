@@ -1,4 +1,14 @@
 <?php
+    require 'dbconn.php';   
+
+    if(isset($_POST['btnSignup']))
+    {
+        $usernameInput = $_POST['registerusername'];
+        $userpassInput = $_POST['registerpassword'];
+
+    }
+
+    
     //dbconn for registration
 
     //query for database
