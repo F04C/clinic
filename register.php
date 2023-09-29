@@ -32,7 +32,7 @@
                         }
                         else
                         {
-                            header("Error registering the user. Please try again.");
+                            header("Location: login.php?msg=Error registering the user. Please try again.");
                         }
                     }
                 }
