@@ -91,3 +91,11 @@ if (!isset($_SESSION['username'])) {
         </fieldset>   
 </body>
 </html>
+
+
+// to-do 
+
+// logout button
+// doctor form separate index.php for doctor
+// medicine.php
+//
