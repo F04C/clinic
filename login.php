@@ -20,7 +20,7 @@
                 if (isset($_GET["msg"])) 
                 {
                     $msg = $_GET["msg"];
-                    echo '<p class="message">' . $msg . '</p>';
+                    echo '<p class="message" style = "text-align:center">' . $msg . '</p>';
                 }
                 ?>
 
