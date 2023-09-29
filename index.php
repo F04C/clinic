@@ -22,7 +22,7 @@ if (!isset($_SESSION['username'])) {
             <img src="../pictures/medicallogo.png" alt="Your Clinic Logo">
         </div>
         <div class="search-bar">
-            <form action="patientrecord.php" method="get">
+            <form action="patientsearchrecord.php" method="get">
                 <input type="text" name="patientQuery" id = "searchPatient" placeholder="Search LAST NAME...">
                 <button type="submit" name = "patientsearchBtn">Search</button>
             </form>
