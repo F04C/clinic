@@ -113,6 +113,22 @@ button:hover {
 #chk:checked ~ .signup label {
   transform: scale(0.6);
 }
+.buttonDC{
+
+ width:60%;
+ height: 40px;
+ margin: 10px auto;
+ justify-content: center;
+ display: block;
+ color: #fff;
+ background: #573b8a;
+ font-size: 1em;
+ font-weight: bold;
+ margin-top: 20px;
+ outline: none;
+ border: none;
+ border-radius: 5px;
+}
 /**********
 *********************************** index.html css*************************
 **********/

@@ -33,6 +33,8 @@
                 <input class = "input" type = "text" name="username" placeholder = "Username" required>
                 <input class = "input" type = "Password" name="password" placeholder = "Password" required >
                 <button class = "button" name = "btnLogin">Login</button>
+                <br>
+                 <button class = "buttonDC"  name ="doctorlogin"> Doctor Login</button>
             </form>
         </div>
     </div>
