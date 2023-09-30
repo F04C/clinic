@@ -106,7 +106,7 @@ if (!isset($_SESSION['username'])) {
 
 
 
-<!-- logout button
+<!--
 // doctor form separate index.php for doctor
 // medicine.php -->
 </html>
