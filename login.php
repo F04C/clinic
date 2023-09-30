@@ -43,7 +43,7 @@
         <div class="modal-content">
             <span class="close" id="closeModal" onclick="closeDoctorLoginModal()">&times;</span>
             <h2>Doctor Login</h2>
-            <form action="doctorlogin.php" method="POST">
+            <form action="Doctorindex.php" method="POST">
                 <label> Username </label><br>
                 <input type="text" name="doctorUsername" placeholder="Doctor Username" required>
                 <br><label>Password</label><br>
