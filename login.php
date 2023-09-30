@@ -34,9 +34,35 @@
                 <input class = "input" type = "Password" name="password" placeholder = "Password" required >
                 <button class = "button" name = "btnLogin">Login</button>
                 <br>
-                 <button class = "buttonDC"  name ="doctorlogin"> Doctor Login</button>
+                <button class="buttonDC" name="doctorlogin" onclick="openDoctorLoginModal()">Doctor Login</button>
+            </form>
+            
+        </div>
+    </div>
+    <div id="doctorLoginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal" onclick="closeDoctorLoginModal()">&times;</span>
+            <h2>Doctor Login</h2>
+            <form action="doctorlogin.php" method="POST">
+                <input type="text" name="doctorUsername" placeholder="Doctor Username" required>
+                <input type="password" name="doctorPassword" placeholder="Doctor Password" required>
+                <button type="submit" name="btnDoctorLogin">Login</button>
             </form>
         </div>
     </div>
+    <script>
+        // Function to open the Doctor Login modal
+        function openDoctorLoginModal() {
+            var modal = document.getElementById('doctorLoginModal');
+            modal.style.display = 'block';
+        }
+
+        // Function to close the Doctor Login modal
+        function closeDoctorLoginModal() {
+            var modal = document.getElementById('doctorLoginModal');
+            modal.style.display = 'none';
+        }
+    </script>
+    
 </body>
 </html>
