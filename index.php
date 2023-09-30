@@ -15,6 +15,16 @@ if (!isset($_SESSION['username'])) {
     <title>Clinic Management System</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+    function isNumber(evt) {
+        evt = (evt) ? evt : window.event;
+        var charCode = (evt.which) ? evt.which : evt.keyCode;
+        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+            return false;
+        }
+        return true;
+    }
+</script>
 </head>
 <body>
     <header>
@@ -40,24 +50,24 @@ if (!isset($_SESSION['username'])) {
         <fieldset class="custom-fieldset">
             <legend><h1><b>Patient Information</b></h1></legend>
 
-            <div class="form-group">
+            <div class="nameage">
                 <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name ="fname" placeholder="First Name">
+                <input class  type="text" id="firstName" name ="fname" placeholder="First Name">
             </div>
 
-            <div class="form-group">
+            <div class="nameage">
                 <label for="middleName">Middle Name:</label>
                 <input type="text" id="middleName" name ="mname" placeholder="Middle Name">
             </div>
 
-            <div class="form-group">
+            <div class="nameage">
                 <label for="lastName">Last Name:</label>
                 <input type="text" id="lastName" name ="lname" placeholder="Last Name">
             </div>
 
-            <div class="form-group">
+            <div class="nameage">
                 <label for="age">Age:</label>
-                <input type="text" id="age" name ="pAge">
+                <input type="text" id="age" name ="pAge" pattern="[0-9]+"  onkeypress="return isNumber(event)">
             </div>
 <br>
             <div class="between3">
