@@ -93,4 +93,13 @@ if (!isset($_SESSION['username'])) {
             <button class = "patientbutton" name = "btnAddPatient"> Add Patient </button>
         </fieldset>   
 </body>
+
+
+
+<!-- logout button
+// doctor form separate index.php for doctor
+// medicine.php -->
 </html>
+
+
+
