@@ -6,6 +6,19 @@
     <title>Clinic Management System</title>
     <link rel ="stylesheet" type = "text/css" href = "styles.css">
     <link href = "https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel = "stylesheet">
+    <script>
+        // Function to open the Doctor Login modal
+        function openDoctorLoginModal() {
+            var modal = document.getElementById('doctorLoginModal');
+            modal.style.display = 'block';
+        }
+
+        // Function to close the Doctor Login modal
+        function closeDoctorLoginModal() {
+            var modal = document.getElementById('doctorLoginModal');
+            modal.style.display = 'none';
+        }
+    </script>
 </head>
 <body class = "">
     <div class ="main">
@@ -53,20 +66,6 @@
     </div>
 </div>
 
-    </div>
-    <script>
-        // Function to open the Doctor Login modal
-        function openDoctorLoginModal() {
-            var modal = document.getElementById('doctorLoginModal');
-            modal.style.display = 'block';
-        }
-
-        // Function to close the Doctor Login modal
-        function closeDoctorLoginModal() {
-            var modal = document.getElementById('doctorLoginModal');
-            modal.style.display = 'none';
-        }
-    </script>
-    
+    </div> 
 </body>
 </html>
