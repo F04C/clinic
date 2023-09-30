@@ -2,10 +2,6 @@
     require 'dbconn.php';   
 
     if(isset($_POST['btnLogin']))
-
-    {weqweqwewqe
-    /** */
-
     {
 
 

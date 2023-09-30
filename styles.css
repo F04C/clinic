@@ -239,3 +239,12 @@ nav a:hover {
   float: right;
   margin: 10px 20px; /* Adjust top margin as needed */
 }
+.between3{
+  Display: flex;
+  height: 1em;
+  margin-right: 8px;
+  margin-left: 8px;
+  margin-bottom: 15px;
+  font-weight: bold;
+
+}

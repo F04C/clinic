@@ -58,15 +58,17 @@ if (!isset($_SESSION['username'])) {
                 <label for="age">Age:</label>
                 <input type="text" id="age" name ="pAge">
             </div>
-
-            <div class="form-group">
+<br>
+            <div class="between3">
                 <label for="sex">Sex:</label>
+
                 <input type="radio" name="sex" id="male" value="male" checked>
                 <label for="male">Male</label>
-                <input type="radio" name="sex" id="female" value="female">
+                <input type="radio" name="sex" id="female" value="female" checked>
                 <label for="female">Female</label>
+                
             </div>
-
+<br>
             <div class="form-group">
                 <label for="address">Address:</label>
                 <input type="text" id="address" name = "pAddress">
