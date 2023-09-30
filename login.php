@@ -55,6 +55,7 @@
     <div id="doctorLoginModal" class="modal">
     <div class="modal-content">
         <span class="close" id="closeModal" onclick="closeDoctorLoginModal()">&times;</span>
+        
         <h2>Doctor Login</h2>
         <form action="doctorindex.php" method="POST">
             <label>Username</label><br>
