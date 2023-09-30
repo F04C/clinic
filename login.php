@@ -34,8 +34,8 @@
                 <input class = "input" type = "Password" name="password" placeholder = "Password" required >
                 <button class = "button" name = "btnLogin">Login</button>
                 <br>
-                <button class="buttonDC" name="doctorlogin" onclick="openDoctorLoginModal()">Doctor Login</button>
             </form>
+            <button class="buttonDC" name="doctorlogin" onclick="openDoctorLoginModal()">Doctor Login</button>
             
         </div>
     </div>
