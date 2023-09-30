@@ -8,7 +8,7 @@ body {
   align-items: center;
   min-height: 100vh;
   font-family: "Jost", sans-serif;
-  background: url(medicalpicture);
+  background: url(medicalimage.jpg);
   background-repeat: no-repeat; /* Prevent image from repeating */
   background-attachment: fixed; /* Fix the image on the body */
   background-size: cover; /* Cover the entire background */
@@ -146,7 +146,7 @@ button:hover {
 }
 
 .modal-content {
-  background-color: #fff;
+  background: linear-gradient(to bottom, #18e767, #19d8c8, #211ecf);
   margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
