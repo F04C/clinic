@@ -41,34 +41,7 @@
             
         </div>
     </div>
-    <div id="doctorLoginModal" class="modal">
-    <div class="modal-content">
-        <span class="close" id="closeModal" onclick="closeDoctorLoginModal()">&times;</span>
-        <h2>Doctor Login</h2>
-        <form action="doctorindex.php" method="POST">
-            <label>Username</label><br>
-            <input type="text" name="doctorUsername" placeholder="Doctor Username" required>
-            <br><label>Password</label><br>
-            <input type="password" name="doctorPassword" placeholder="Doctor Password" required>
-            <button type="submit" name="btnDoctorLogin">Login</button>
-        </form>
-    </div>
 </div>
-
-    </div>
-    <script>
-        // Function to open the Doctor Login modal
-        function openDoctorLoginModal() {
-            var modal = document.getElementById('doctorLoginModal');
-            modal.style.display = 'block';
-        }
-
-        // Function to close the Doctor Login modal
-        function closeDoctorLoginModal() {
-            var modal = document.getElementById('doctorLoginModal');
-            modal.style.display = 'none';
-        }
-    </script>
     
 </body>
 </html>
