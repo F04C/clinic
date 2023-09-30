@@ -44,7 +44,9 @@
             <span class="close" id="closeModal" onclick="closeDoctorLoginModal()">&times;</span>
             <h2>Doctor Login</h2>
             <form action="doctorlogin.php" method="POST">
+                <label> Username </label><br>
                 <input type="text" name="doctorUsername" placeholder="Doctor Username" required>
+                <br><label>Password</label><br>
                 <input type="password" name="doctorPassword" placeholder="Doctor Password" required>
                 <button type="submit" name="btnDoctorLogin">Login</button>
             </form>
