@@ -4,7 +4,6 @@
     if(isset($_POST['btnLogin']))
     {
 
-
             $usernameInput = $_POST['username'];
             $userpassInput = $_POST['password'];
 

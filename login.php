@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login and Sign up</title>
+    <title>Clinic Management System</title>
     <link rel ="stylesheet" type = "text/css" href = "styles.css">
     <link href = "https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel = "stylesheet">
 </head>
@@ -15,7 +15,15 @@
                 <label class ="label" for = "chk" aria-hidden="true">Sign up</label>
                 <input class = "input" type = "text" name="registerusername" placeholder = "Username" required>
                 <input class = "input" type = "Password" name="registerpassword" placeholder = "Password" required>
-                <button class = "button" >Sign up</button>
+                <button class = "button" name = "btnSignup">Sign up</button>
+                <?php
+                if (isset($_GET["msg"])) 
+                {
+                    $msg = $_GET["msg"];
+                    echo '<p class="message" style = "text-align:center">' . $msg . '</p>';
+                }
+                ?>
+
             </form>
 
         </div>
