@@ -19,7 +19,7 @@ if (!isset($_SESSION['username'])) {
 <body>
     <header>
         <div class="logo">
-            <img src="../pictures/medicallogo.png" alt="Your Clinic Logo">
+            <img src="medicallogo.png" alt="Your Clinic Logo">
         </div>
         <div class="search-bar">
             <form action="patientsearchrecord.php" method="get">
