@@ -6,15 +6,13 @@
     <title>Clinic Management System</title>
     <link rel ="stylesheet" type = "text/css" href = "styles.css">
     <link href = "https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel = "stylesheet">
-    </div> <script src="script.js"></script>
-
 </head>
 <body class = "">
     <div class ="main">
         <input type = "checkbox" id ="chk" aria-hidden = "true">
         <div class = "signup">
-            <form action ="seclogin.php" method = "POST">
-                <label class ="label" for = "chk" aria-hidden="true">Secretary Login</label>
+            <form action ="register.php" method = "POST">
+                <label class ="label" for = "chk" aria-hidden="true">Sign up</label>
                 <input class = "input" type = "text" name="registerusername" placeholder = "Username" required>
                 <input class = "input" type = "Password" name="registerpassword" placeholder = "Password" required>
                 <button class = "button" name = "btnSignup">Sign up</button>
@@ -29,9 +27,9 @@
             </form>
 
         </div>
-        <div class = "doctorlogin">
-            <form action = "doctorlogin.php" method = "POST"> 
-                <label class ="label" for = "chk" aria-hidden="true">Doctor Login</label>
+        <div class = "login">
+            <form action = "userlogin.php" method = "POST"> 
+                <label class ="label" for = "chk" aria-hidden="true">Login</label>
                 <input class = "input" type = "text" name="username" placeholder = "Username" required>
                 <input class = "input" type = "Password" name="password" placeholder = "Password" required >
                 <button class = "button" name = "btnLogin">Login</button>
@@ -42,6 +40,7 @@
         </div>
     </div>
 </div>
-    
+</div>
+
 </body>
 </html>
