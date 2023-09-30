@@ -114,8 +114,8 @@ button:hover {
   transform: scale(0.6);
 }
 .buttonDC{
-
- width:60%;
+ float: right;
+ width:40%;
  height: 40px;
  margin: 10px auto;
  justify-content: center;
@@ -125,6 +125,7 @@ button:hover {
  font-size: 1em;
  font-weight: bold;
  margin-top: 20px;
+ margin-right: 20px;
  outline: none;
  border: none;
  border-radius: 5px;
