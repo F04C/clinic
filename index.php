@@ -27,6 +27,7 @@ if (!isset($_SESSION['username'])) {
                 <button type="submit" name = "patientsearchBtn">Search</button>
             </form>
         </div>
+        <button class="logout-button" onclick="location.href='logout.php'">Logout</button>
     </header>
     <br>
 <nav>        
@@ -93,11 +94,3 @@ if (!isset($_SESSION['username'])) {
         </fieldset>   
 </body>
 </html>
-
-
-// to-do 
-
-// logout button
-// doctor form separate index.php for doctor
-// medicine.php
-//
