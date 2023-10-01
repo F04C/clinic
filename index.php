@@ -75,7 +75,7 @@ if (!isset($_SESSION['username'])) {
 
                 <input type="radio" name="sex" id="male" value="male" checked>
                 <label for="male">Male</label>
-                <input type="radio" name="sex" id="female" value="female" checked>
+                <input type="radio" name="sex" id="female" value="female">
                 <label for="female">Female</label>
                 
             </div>
