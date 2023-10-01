@@ -11,11 +11,11 @@
     <div class ="main">
         <input type = "checkbox" id ="chk" aria-hidden = "true">
         <div class = "signup">
-            <form action ="register.php" method = "POST">
-                <label class ="label" for = "chk" aria-hidden="true">Sign up</label>
-                <input class = "input" type = "text" name="registerusername" placeholder = "Username" required>
-                <input class = "input" type = "Password" name="registerpassword" placeholder = "Password" required>
-                <button class = "button" name = "btnSignup">Sign up</button>
+            <form action ="seclogin.php" method = "POST">
+                <label class ="label" for = "chk" aria-hidden="true">Secretary</label>
+                <input class = "input" type = "text" name="secusername" placeholder = "Username" required>
+                <input class = "input" type = "Password" name="secpassword" placeholder = "Password" required>
+                <button class = "button" name = "btnSecLogin">Login</button>
                 <?php
                 if (isset($_GET["msg"])) 
                 {
@@ -28,15 +28,13 @@
 
         </div>
         <div class = "login">
-            <form action = "userlogin.php" method = "POST"> 
-                <label class ="label" for = "chk" aria-hidden="true">Login</label>
-                <input class = "input" type = "text" name="username" placeholder = "Username" required>
-                <input class = "input" type = "Password" name="password" placeholder = "Password" required >
-                <button class = "button" name = "btnLogin">Login</button>
+            <form action = "doclogin.php" method = "POST"> 
+                <label class ="label" for = "chk" aria-hidden="true">Doctor</label>
+                <input class = "input" type = "text" name="docusername" placeholder = "Username" required>
+                <input class = "input" type = "Password" name="docpassword" placeholder = "Password" required >
+                <button class = "button" name = "btnDocLogin">Login</button>
                 <br>
-            </form>
-            <button class="buttonDC" name="doctorlogin" onclick="openDoctorLoginModal()">Doctor Login</button>
-            
+            </form> 
         </div>
     </div>
 </div>
