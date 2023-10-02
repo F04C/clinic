@@ -17,7 +17,7 @@
                 <label class ="label" for = "chk" aria-hidden="true">Login</label>
                 <input class = "input" type = "text" name="registerusername" placeholder = "Username" required>
                 <input class = "input" type = "Password" name="registerpassword" placeholder = "Password" required>
-                <button class = "button" name = "btnSignup">Sign up</button>
+                <button class = "button" name = "btnSignup">Login</button>
                 <?php
                 if (isset($_GET["msg"])) 
                 {
