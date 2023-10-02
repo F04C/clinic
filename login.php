@@ -6,7 +6,6 @@
     <title>Clinic Management System</title>
     <link rel ="stylesheet" type = "text/css" href = "styles.css">
     <link href = "https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel = "stylesheet">
-    </div> <script src="script.js"></script>
 
 </head>
 <body class = "">
@@ -14,10 +13,10 @@
         <input type = "checkbox" id ="chk" aria-hidden = "true">
         <div class = "signup">
             <form action ="register.php" method = "POST">
-                <label class ="label" for = "chk" aria-hidden="true">Sign up</label>
+                <label class ="label" for = "chk" aria-hidden="true">LOGIN</label>
                 <input class = "input" type = "text" name="registerusername" placeholder = "Username" required>
                 <input class = "input" type = "Password" name="registerpassword" placeholder = "Password" required>
-                <button class = "button" name = "btnSignup">Sign up</button>
+                <button class = "button" name = "btnSignup">Login</button>
                 <?php
                 if (isset($_GET["msg"])) 
                 {
@@ -31,31 +30,18 @@
         </div>
         <div class = "login">
             <form action = "userlogin.php" method = "POST"> 
-                <label class ="label" for = "chk" aria-hidden="true">Login</label>
+                <label class ="label" for = "chk" aria-hidden="true">DOC LOGIN</label>
                 <input class = "input" type = "text" name="username" placeholder = "Username" required>
                 <input class = "input" type = "Password" name="password" placeholder = "Password" required >
                 <button class = "button" name = "btnLogin">Login</button>
                 <br>
             </form>
-            <button class="buttonDC" name="doctorlogin" onclick="openDoctorLoginModal()">Doctor Login</button>
-            
+         
         </div>
     </div>
-    <div id="doctorLoginModal" class="modal">
-    <div class="modal-content">
-        <span class="close" id="closeModal" onclick="closeDoctorLoginModal()">&times;</span>
 
-        <h2>Doctor Login</h2>
-        <form action="doctorindex.php" method="POST">
-            <label>Username</label><br>
-            <input type="text" name="doctorUsername" placeholder="Doctor Username" required>
-            <br><label>Password</label><br>
-            <input type="password" name="doctorPassword" placeholder="Doctor Password" required>
-            <button type="submit" name="btnDoctorLogin">Login</button>
-        </form>
     </div>
 </div>
 
-    </div> 
 </body>
 </html>
