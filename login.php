@@ -14,7 +14,7 @@
         <input type = "checkbox" id ="chk" aria-hidden = "true">
         <div class = "signup">
             <form action ="register.php" method = "POST">
-                <label class ="label" for = "chk" aria-hidden="true">Sign up</label>
+                <label class ="label" for = "chk" aria-hidden="true">Login</label>
                 <input class = "input" type = "text" name="registerusername" placeholder = "Username" required>
                 <input class = "input" type = "Password" name="registerpassword" placeholder = "Password" required>
                 <button class = "button" name = "btnSignup">Sign up</button>
@@ -25,9 +25,7 @@
                     echo '<p class="message" style = "text-align:center">' . $msg . '</p>';
                 }
                 ?>
-
             </form>
-
         </div>
         <div class = "login">
 
@@ -43,15 +41,6 @@
     </div>
 
     </div>
-
-            <form action = "doclogin.php" method = "POST"> 
-                <label class ="label" for = "chk" aria-hidden="true">Doctor</label>
-                <input class = "input" type = "text" name="docusername" placeholder = "Username" required>
-                <input class = "input" type = "Password" name="docpassword" placeholder = "Password" required >
-                <button class = "button" name = "btnDocLogin">Login</button>
-                <br>
-            </form> 
-        </div>
     </div>
 </div>
 </div>
