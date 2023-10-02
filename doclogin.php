@@ -1,13 +1,13 @@
 <?php
     require 'dbconn.php';   
 
-    if(isset($_POST['btnLogin']))
+    if(isset($_POST['btnDocLogin']))
     {
 
-            $usernameInput = $_POST['username'];
-            $userpassInput = $_POST['password'];
+            $usernameInput = $_POST['docusername'];
+            $userpassInput = $_POST['docpassword'];
 
-            $sql = "SELECT * FROM tblsec  where username = '".$usernameInput."' and password = '".$userpassInput."';";
+            $sql = "SELECT * FROM tbldoctor  where username = '".$usernameInput."' and password = '".$userpassInput."';";
             if($conn)
             {    
                 try{
@@ -24,7 +24,7 @@
                             $_SESSION['username'] = $record['username'];
                             $_SESSION['userid'] = $record['userid'];
 
-                            header('Location: index.php');
+                            header('Location: doctorindex.php');
                         }
                         else
                         {

@@ -113,22 +113,22 @@ button:hover {
 #chk:checked ~ .signup label {
   transform: scale(0.6);
 }
-.buttonDC{
- float: right;
- width:40%;
- height: 40px;
- margin: 10px auto;
- justify-content: center;
- display: block;
- color: #fff;
- background: #573b8a;
- font-size: 1em;
- font-weight: bold;
- margin-top: 20px;
- margin-right: 20px;
- outline: none;
- border: none;
- border-radius: 5px;
+.buttonDC {
+  float: right;
+  width: 40%;
+  height: 40px;
+  margin: 10px auto;
+  justify-content: center;
+  display: block;
+  color: #fff;
+  background: #573b8a;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-right: 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
 }
 /*******************************************************************************
 **********************DOCTOR LOGIN*****************************************8
@@ -280,24 +280,23 @@ nav a:hover {
   resize: vertical;
   font-size: 16px;
 }
-.nameage{
-  margin-bottom: 15px; 
+.nameage {
+  margin-bottom: 15px;
 }
-.nameage label{
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
- /* Add some space below labels */
+.nameage label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  /* Add some space below labels */
 }
 .nameage input[type="text"],
-.nameage textarea{
+.nameage textarea {
   width: 40%; /* Adjust width to leave space on the right */
   padding: 10px; /* Increase padding for bigger textboxes */
   border: 1px solid #ccc;
   border-radius: 3px;
   resize: vertical;
   font-size: 16px;
-
 }
 
 .form-group textarea {
@@ -307,25 +306,24 @@ nav a:hover {
   float: right;
   margin: 10px 20px; /* Adjust top margin as needed */
 }
-.between3{
-  Display: flex;
+.between3 {
+  display: flex;
   height: 1em;
   margin-right: 8px;
   margin-left: 8px;
   margin-bottom: 15px;
   font-weight: bold;
-
 }
 /*************************************************************
 ********************LOGOUT************************************
 ******************************************************************/
 
 .logout-button {
-    background-color: #f44336;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 3px;
-    cursor: pointer;
-    margin-right: 50px;
-  }
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 50px;
+}

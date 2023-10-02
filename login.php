@@ -6,6 +6,7 @@
     <title>Clinic Management System</title>
     <link rel ="stylesheet" type = "text/css" href = "styles.css">
     <link href = "https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel = "stylesheet">
+    </div> <script src="script.js"></script>
 
 </head>
 <body class = "">
@@ -13,10 +14,10 @@
         <input type = "checkbox" id ="chk" aria-hidden = "true">
         <div class = "signup">
             <form action ="register.php" method = "POST">
-                <label class ="label" for = "chk" aria-hidden="true">LOGIN</label>
+                <label class ="label" for = "chk" aria-hidden="true">Sign up</label>
                 <input class = "input" type = "text" name="registerusername" placeholder = "Username" required>
                 <input class = "input" type = "Password" name="registerpassword" placeholder = "Password" required>
-                <button class = "button" name = "btnSignup">Login</button>
+                <button class = "button" name = "btnSignup">Sign up</button>
                 <?php
                 if (isset($_GET["msg"])) 
                 {
@@ -29,6 +30,7 @@
 
         </div>
         <div class = "login">
+
             <form action = "userlogin.php" method = "POST"> 
                 <label class ="label" for = "chk" aria-hidden="true">DOC LOGIN</label>
                 <input class = "input" type = "text" name="username" placeholder = "Username" required>
@@ -41,6 +43,17 @@
     </div>
 
     </div>
+
+            <form action = "doclogin.php" method = "POST"> 
+                <label class ="label" for = "chk" aria-hidden="true">Doctor</label>
+                <input class = "input" type = "text" name="docusername" placeholder = "Username" required>
+                <input class = "input" type = "Password" name="docpassword" placeholder = "Password" required >
+                <button class = "button" name = "btnDocLogin">Login</button>
+                <br>
+            </form> 
+        </div>
+    </div>
+</div>
 </div>
 
 </body>
