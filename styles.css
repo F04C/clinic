@@ -163,6 +163,7 @@ header {
   align-items: center;
 }
 
+
 .search-bar input[type="text"] {
   padding: 5px 50px; /* Increase left padding for a wider input */
   border: 1px solid #ccc;
