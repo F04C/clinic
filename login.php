@@ -1,4 +1,4 @@
-<!doctype html>
+<!Doctype html>
 <html lang="en">
 
 <head>
@@ -15,10 +15,6 @@
 	<link rel="stylesheet" href="loginassets/css/style.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="loginassets\js\1.js"></script>
-
-
-
-
 </head>
 
 <body class="img js-fullheight" style="background-image: url(loginassets/images/bg.jpg);">
@@ -51,12 +47,11 @@
 									</label>
 								</div>
 								<div class="w-50 text-md-right">
-									<a href="#" style="color: #fff">Forgot Password</a>
+									<a href="forgotpassword.php" style="color: #fff">Forgot Password</a>
 								</div>
 							</div>
 						</form>
 						<h5 id="contactAdminMsg" class="mb-4 text-center <?php echo isset($_GET["userNotFound"]) ? '' : 'd-none'; ?>" style="color: #ffff;">Contact administrator if you don't have an account.</h5>
-
 					</div>
 				</div>
 			</div>

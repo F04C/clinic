@@ -14,8 +14,6 @@ $(document).ready(function() {
 
 // Function to check if the user exists
 function checkUserExists() {
-    // Perform user existence check here (e.g., AJAX request to the server)
-    // If the user doesn't exist, show the alert and display the h5 element
     if (!userExists) {
         showUserNotFoundAlert();
         showContactAdminMessage(); // Function to display the h5 element
