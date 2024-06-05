@@ -281,7 +281,8 @@ progress {
 
 [type="search"] {
   outline-offset: -2px;
-  -webkit-appearance: none; }
+  -webkit-appearance: none; 
+  appearance: listbox;}
 
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
