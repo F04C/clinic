@@ -21,8 +21,8 @@ if (!isset($_SESSION["isAdmin"])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="path-to-your-css/bootstrap.min.css">
-    <script src="path-to-your-js/jquery.min.js"></script>
-    <script src="path-to-your-js/bootstrap.min.js"></script>
+    <!-- <script src="path-to-your-js/jquery.min.js"></script>
+    <script src="path-to-your-js/bootstrap.min.js"></script> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -40,6 +40,7 @@ if (!isset($_SESSION["isAdmin"])) {
     <div class="container-scroller">
         <!-- partial:partials/_sidebar.php -->
         <?php include "_sidebar.php"; ?>
+
         <div class="container-fluid page-body-wrapper">
             <!-- partial:partials/_settings-panel.php -->
             <?php include "_settings-panel.php"; ?>
@@ -60,10 +61,9 @@ if (!isset($_SESSION["isAdmin"])) {
                             </div>
                         </div>
                     </div>
-                    <?php
-                    if (isset($_GET['msg']) && !empty($_GET['msg'])) {
+                    <?php if (isset($_GET["msg"]) && !empty($_GET["msg"])) {
                         // Display the success message
-                        echo '<div class="msg">' . $_GET['msg'] . '</div>';
+                        echo '<div class="msg">' . $_GET["msg"] . "</div>";
                     } ?>
 
 
@@ -77,16 +77,14 @@ if (!isset($_SESSION["isAdmin"])) {
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
-                                <?php include "adminfieldset.php"; ?>
+                                    <?php include "adminfieldset.php"; ?>
                                 <div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <?php
-                    include 'admintables.php';
-                    ?>
+                    <?php include "admintables.php"; ?>
 
                     <!-- <script src="assets/vendors/js/vendor.bundle.base.js"></script>
                     <script src="assets/vendors/jquery-bar-rating/jquery.barrating.min.js"></script>
