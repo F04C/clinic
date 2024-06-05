@@ -54,7 +54,4 @@ display the unavailability of the doctor and when will he/she be available (date
 display medical history of the patient in patient record
 
 
-IREMOVE LANG OR EDIT KUNG ANO NA NATAPOS. INDI PAG DELETE NING FILE
-
-
 
