@@ -98,9 +98,9 @@ if (!isset($_SESSION["isAdmin"])) {
                     <script src="assets/vendors/flot/jquery.flot.stack.js"></script>
                     <script src="assets/js/jquery.cookie.js" type="text/javascript"></script>
                     <script src="assets/js/off-canvas.js"></script>
-                    <script src="assets/js/hoverable-collapse.js"></script>
+                    <script src="assets/js/hoverable-collapse.js"></script> -->
                     <script src="assets/js/misc.js"></script>
-                    <script src="assets/js/settings.js"></script>
+                    <!-- <script src="assets/js/settings.js"></script>
                     <script src="assets/js/todolist.js"></script>
                     <script src="assets/js/dashboard.js"></script>
                     <script src="assets\js\a.js"></script> -->

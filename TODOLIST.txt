@@ -30,7 +30,7 @@ updatepatient - ok
 ====for doctor====
 docappointment - remove search bar?, bring back the delete button, 3 buttons in action. 1 for edit, 2 for done, 3 for delete
 done - js for is it done, also php to remove the patient from the queue, use this to update the data of the patient like the data of the appointment to be used for "previous appointment"
-
+in "your appointment", there's an `Error: Unknown column 'p.findings' in 'field list'`
 
 ====for sec====
 savepatient - ok
