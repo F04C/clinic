@@ -1,8 +1,8 @@
 <?php
 // Check if the user is not logged in, and redirect to the login page if not authenticated.
 if (!isset($_SESSION['username'])) {
-  header("Location: login.php"); // Redirect to your login page
-  exit();
+    header("Location: login.php"); // Redirect to your login page
+    exit();
 }
 ?>
 
@@ -33,22 +33,22 @@ if (!isset($_SESSION['username'])) {
       <span class="nav-item-head">Navigation</span>
     </li>
     <?php
-    // Function to determine the profile link based on the user's role
-    function getProfileLink($session)
-    {
-      if (isset($session['isAdmin']) && $session['isAdmin'] == 1) {
+// Function to determine the profile link based on the user's role
+function getProfileLink($session)
+{
+    if (isset($session['isAdmin']) && $session['isAdmin'] == 1) {
         return "adminindex.php"; // Admin profile link
-      } elseif (isset($session['isSec']) && $session['isSec'] == 1) {
+    } elseif (isset($session['isSec']) && $session['isSec'] == 1) {
         return "secindex.php"; // Secretary profile link
-      } elseif (isset($session['isDoc']) && $session['isDoc'] == 1) {
+    } elseif (isset($session['isDoc']) && $session['isDoc'] == 1) {
         return "docappointment.php"; // Doctor profile link
-      }
     }
-    ?>
+}
+?>
     <!-- for secretary -->
     <?php
-    // Check user role and display corresponding menu items
-    if (isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] == 1 && (!isset($_SESSION['isSec']) || $_SESSION['isSec'] != 1) && (!isset($_SESSION['isDoc']) || $_SESSION['isDoc'] != 1)) {
+// Check user role and display corresponding menu items
+if (isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] == 1 && (!isset($_SESSION['isSec']) || $_SESSION['isSec'] != 1) && (!isset($_SESSION['isDoc']) || $_SESSION['isDoc'] != 1)) {
     ?>
 
       <li class="nav-item">
@@ -63,12 +63,12 @@ if (!isset($_SESSION['username'])) {
       </li>
 
     <?php
-    }
-    ?>
+}
+?>
 
     <!-- for secretary-->
     <?php
-    if (isset($_SESSION['isSec']) && $_SESSION['isSec'] == 1 && (!isset($_SESSION['isAdmin']) || $_SESSION['isAdmin'] != 1) && (!isset($_SESSION['isDoc']) || $_SESSION['isDoc'] != 1)) {
+if (isset($_SESSION['isSec']) && $_SESSION['isSec'] == 1 && (!isset($_SESSION['isAdmin']) || $_SESSION['isAdmin'] != 1) && (!isset($_SESSION['isDoc']) || $_SESSION['isDoc'] != 1)) {
     ?>
       <li class="nav-item">
         <a class="nav-link" href="secindex.php">
@@ -84,11 +84,11 @@ if (!isset($_SESSION['username'])) {
         </a>
       </li>
     <?php
-    }
-    ?>
+}
+?>
     <!-- for doctor-->
     <?php
-    if (isset($_SESSION['isDoc']) && $_SESSION['isDoc'] == 1 && (!isset($_SESSION['isAdmin']) || $_SESSION['isAdmin'] != 1) && (!isset($_SESSION['isAdmin']) || $_SESSION['isAdmin'] != 1)) {
+if (isset($_SESSION['isDoc']) && $_SESSION['isDoc'] == 1 && (!isset($_SESSION['isAdmin']) || $_SESSION['isAdmin'] != 1) && (!isset($_SESSION['isAdmin']) || $_SESSION['isAdmin'] != 1)) {
     ?>
       <li class="nav-item">
         <a class="nav-link" href="docappointment.php">
@@ -103,8 +103,8 @@ if (!isset($_SESSION['username'])) {
         </a>
       </li>
     <?php
-    }
-    ?>
+}
+?>
 
     </li>
 </nav>
