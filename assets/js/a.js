@@ -1,4 +1,6 @@
-                        function togglePasswordVisibility(inputId, iconId) {
+// edit this js file, separate the functions inside
+
+function togglePasswordVisibility(inputId, iconId) {
                             var passwordField = document.getElementById(inputId);
                             var eyeIcon = document.getElementById(iconId);
 

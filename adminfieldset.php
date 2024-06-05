@@ -53,8 +53,8 @@
 
         <div id="licenseDiv">
             <br>
-            <label for="licno">License Number:</label>
-            <input class="form-control" type="number" id="licno" name="licno" placeholder="Ex. 123456789 " inputmode="numeric">
+            <label for="licensenum">License Number:</label>
+            <input class="form-control" type="number" id="licensenum" name="licensenum" placeholder="Ex. 123456789 " inputmode="numeric">
         </div>
 
         <div>

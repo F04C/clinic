@@ -88,7 +88,7 @@ if (!isset($_SESSION["isAdmin"])) {
                     include 'admintables.php';
                     ?>
 
-                    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+                    <!-- <script src="assets/vendors/js/vendor.bundle.base.js"></script>
                     <script src="assets/vendors/jquery-bar-rating/jquery.barrating.min.js"></script>
                     <script src="assets/vendors/chart.js/Chart.min.js"></script>
                     <script src="assets/vendors/flot/jquery.flot.js"></script>
@@ -103,7 +103,7 @@ if (!isset($_SESSION["isAdmin"])) {
                     <script src="assets/js/settings.js"></script>
                     <script src="assets/js/todolist.js"></script>
                     <script src="assets/js/dashboard.js"></script>
-                    <script src="assets\js\a.js"></script>
+                    <script src="assets\js\a.js"></script> -->
 
 </body>
 
