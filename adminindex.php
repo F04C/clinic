@@ -29,10 +29,10 @@ if (!isset($_SESSION["isAdmin"])) {
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets\css\a.css">
+    <!-- <link rel="stylesheet" href="assets\css\a.css"> -->
     <link rel="stylesheet" href="assets/vendors/jquery-bar-rating/css-stars.css" />
     <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="assets/css/demo_1/style.css" />
+    <link rel="stylesheet" href="assets/css/clinic/style.css" />
     <link rel="shortcut icon" href="assets/images/favicon.png" />
 </head>
 
