@@ -3,7 +3,7 @@ $servername = "localhost";
 $username = "root";
 $password = "12345678";
 $dbname = "clinic";
-$portnum = "3306";
+$portnum = "3307";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname, $portnum);
 
@@ -11,4 +11,4 @@ $conn = mysqli_connect($servername, $username, $password, $dbname, $portnum);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-//echo "Connected successfully";
+// echo "Connected successfully";

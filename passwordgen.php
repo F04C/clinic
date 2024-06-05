@@ -1,10 +1,10 @@
 <?php
 require 'dbconn.php';
 
-$plainPassword = "doc2"; // Replace with the desired password
+$plainPassword = "admin"; // Replace with the desired password
 $hashedPassword = password_hash($plainPassword, PASSWORD_DEFAULT);
 
-$username = "doc2"; // Replace with the username
+$username = "admin"; // Replace with the username
 
 // Set the default value for tbluserroles_roleid to 1
 $defaultRoleId = 1;
